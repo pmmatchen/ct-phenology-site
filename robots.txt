@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pmmatchen.github.io/ct-phenology-site/sitemap.xml
