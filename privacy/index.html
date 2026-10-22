@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · CT Phenology</title>
+<meta name="description" content="Privacy policy for the CT Phenology mobile app.">
+<meta name="theme-color" content="#2d4a2e">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="../style.css">
+<meta property="og:title" content="Privacy Policy · CT Phenology">
+<meta property="og:description" content="Privacy policy for the CT Phenology mobile app.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pmmatchen.github.io/ct-phenology-site/img/og.jpg">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../"><img src="../img/icon.png" alt="">CT Phenology</a>
+  <nav><a href="../#features">Features</a><a href="../#screens">Screenshots</a><a href="../privacy/">Privacy</a></nav>
+</div></header>
+
+<main class="doc">
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: October 22, 2026</p>
+<p>CT Phenology (&ldquo;the app&rdquo;) is a free educational app for exploring the seasonal timing of plants and animals. This policy explains what information the app uses and who receives it. In short: the app has no accounts, no advertising, and no analytics, and it does not sell or share your data for marketing.</p>
+
+<h2>Information we use</h2>
+<h3>Location (optional)</h3>
+<p>The app asks for your device&rsquo;s location only if you tap &ldquo;Use GPS&rdquo; on the Walk screen. Location is used while the app is open, never in the background. You can decline, and the app still works using a default point in Connecticut.</p>
+<p>When you share your location, your approximate coordinates are sent directly from your device to the third-party services listed below, so they can return nearby weather and sightings. We do not operate a server that receives or stores your location.</p>
+<h3>Information stored on your device</h3>
+<p>The app saves your preferences (such as your selected state) and, if you use the &ldquo;I saw this today&rdquo; feature, a personal log of species you recorded. This stays on your device. It is not sent to us. Uninstalling the app removes it.</p>
+<h3>Information we do not collect</h3>
+<p>We do not ask you to create an account and we do not collect your name, email address, contacts, or photos. The app contains no advertising and no analytics or tracking software.</p>
+
+<h2>Third-party services</h2>
+<p>To work, the app requests data from the services below. When your device contacts them, they receive standard technical information such as your IP address, and, if you chose &ldquo;Use GPS&rdquo;, the coordinates in the request. Their handling of that information is governed by their own privacy policies.</p>
+<ul>
+<li><strong>The Weather Company</strong> (api.weather.com): weather forecasts and growing degree days for your location.</li>
+<li><strong>iNaturalist</strong> (api.inaturalist.org): recent nearby observations and species photos.</li>
+</ul>
+<p>When you tap a link such as &ldquo;Log on iNaturalist&rdquo;, you leave the app and that site&rsquo;s own policies apply.</p>
+
+<h2>Children</h2>
+<p>The app is suitable for all ages and does not knowingly collect personal information from anyone, including children.</p>
+<h2>Your choices</h2>
+<p>You can deny or revoke location permission at any time in your device settings, and you can delete everything the app stores by uninstalling it.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top will be updated. Material changes will be noted in the app&rsquo;s store listing or release notes.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <a class="mail" data-show="1" href="#">email us</a>.</p>
+</main>
+<footer><div class="wrap">
+  <div>&copy; 2026 CT Phenology. Free, no ads, no accounts.</div>
+  <div><a href="../privacy/">Privacy Policy</a> &middot; <a class="mail" href="#">Contact</a></div>
+</div></footer>
+<script>
+  // Assemble the contact address at load time so it isn't in the raw HTML.
+  var a = ["pmmatchen+ctphenology", "gmail.com"].join("@");
+  document.querySelectorAll("a.mail").forEach(function (el) {
+    el.href = "mailto:" + a;
+    if (el.dataset.show) el.textContent = a;
+  });
+</script>
+</body></html>

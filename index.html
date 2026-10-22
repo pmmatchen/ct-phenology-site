@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CT Phenology: what's blooming, nesting and migrating in Connecticut</title>
+<meta name="description" content="A free app for exploring the seasonal timing of Connecticut's plants and animals, week by week. 364 species, live sightings, no ads.">
+<meta name="theme-color" content="#2d4a2e">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="CT Phenology: what's blooming, nesting and migrating in Connecticut">
+<meta property="og:description" content="A free app for exploring the seasonal timing of Connecticut's plants and animals, week by week. 364 species, live sightings, no ads.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pmmatchen.github.io/ct-phenology-site/img/og.jpg">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href=""><img src="img/icon.png" alt="">CT Phenology</a>
+  <nav><a href="#features">Features</a><a href="#screens">Screenshots</a><a href="privacy/">Privacy</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Know what's blooming, nesting and migrating in Connecticut.</h1>
+    <p>CT Phenology turns the natural calendar into something you can explore: 364 plants, birds, mammals, amphibians, reptiles, insects and fungi, week by week.</p>
+    <div class="badges">
+      <!-- Replace href and remove "soon" once the listings are live -->
+      <a class="badge soon" aria-disabled="true"><small>Coming soon to the</small><strong>App Store</strong></a>
+      <a class="badge soon" aria-disabled="true"><small>Coming soon to</small><strong>Google Play</strong></a>
+    </div>
+  </div>
+  <img class="shot" src="img/season.png" alt="CT Phenology Season Wheel screen" width="300" height="533">
+</div></section>
+
+<section class="block" id="about"><div class="wrap center">
+  <h2>What is phenology?</h2>
+  <p class="lead">Phenology is the study of seasonal timing: when the first Bloodroot flowers, when warblers pass through, when spotted salamanders head for vernal pools. Knowing the calendar means knowing when and where to look.</p>
+  <div class="stats" style="justify-content:center;margin-top:28px">
+    <div><strong>364</strong>species</div><div><strong>52</strong>weeks of the year</div><div><strong>9</strong>habitats</div>
+  </div>
+</div></section>
+
+<section class="block alt" id="features"><div class="wrap">
+  <h2 class="center">What you can do</h2>
+  <div class="features">
+<div class="card"><div class="ico">🌀</div><h3>Season Wheel</h3><p>A 52-week wheel lets you spin through the year and see what is present, peaking or winding down in any week.</p></div>
+<div class="card"><div class="ico">🥾</div><h3>Plan a walk</h3><p>Species sorted into At Peak Now, Emerging Soon and Just Past, adjusted for how early or late this year's season is running, plus recent iNaturalist sightings nearby.</p></div>
+<div class="card"><div class="ico">🔭</div><h3>Browse every species</h3><p>Search and filter by group, habitat, conservation status, or what a species is doing right now: flowering, fruiting, migrating or nesting.</p></div>
+<div class="card"><div class="ico">🌲</div><h3>Learn the habitats</h3><p>Nine Connecticut habitats, from forest interior and vernal pools to meadows and coastal shoreline, and how each changes through the seasons.</p></div>
+<div class="card"><div class="ico">🔗</div><h3>Follow the cascades</h3><p>Hand-curated chains of events where one species' activity signals the next: Skunk Cabbage, then Wood Frog, then Spotted Salamander.</p></div>
+<div class="card"><div class="ico">🌡️</div><h3>Track the season's pace</h3><p>Growing degree days show whether spring is running ahead of or behind normal, and weather alerts flag hard freezes and salamander migration nights.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="screens"><div class="wrap">
+  <h2 class="center">A look inside</h2>
+  <div class="shots">
+<figure><img src="img/season.png" alt="CT Phenology Season Wheel screen" loading="lazy" width="240" height="427"><figcaption>Season Wheel</figcaption></figure>
+<figure><img src="img/walk.png" alt="CT Phenology Plan a walk screen" loading="lazy" width="240" height="427"><figcaption>Plan a walk</figcaption></figure>
+<figure><img src="img/species.png" alt="CT Phenology Species screen" loading="lazy" width="240" height="427"><figcaption>Species</figcaption></figure>
+<figure><img src="img/habitats.png" alt="CT Phenology Habitats screen" loading="lazy" width="240" height="427"><figcaption>Habitats</figcaption></figure>
+<figure><img src="img/cascades.png" alt="CT Phenology Cascades screen" loading="lazy" width="240" height="427"><figcaption>Cascades</figcaption></figure>
+<figure><img src="img/about.png" alt="CT Phenology About screen" loading="lazy" width="240" height="427"><figcaption>About</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap center">
+  <h2>Built on citizen science</h2>
+  <p class="lead">Seasonal photos and nearby sightings come from <a href="https://www.inaturalist.org">iNaturalist</a>, phenology data from the <a href="https://www.usanpn.org">USA National Phenology Network</a>, and weather from The Weather Company. Created as a Master Naturalist final project with the Connecticut Forest &amp; Park Association program.</p>
+  <p class="lead">No account, no ads, no tracking. Location is optional and only used if you tap &ldquo;Use GPS&rdquo;. Questions or feedback? <a class="mail" data-show="1" href="#">email us</a>.</p>
+</div></section>
+<footer><div class="wrap">
+  <div>&copy; 2026 CT Phenology. Free, no ads, no accounts.</div>
+  <div><a href="privacy/">Privacy Policy</a> &middot; <a class="mail" href="#">Contact</a></div>
+</div></footer>
+<script>
+  // Assemble the contact address at load time so it isn't in the raw HTML.
+  var a = ["pmmatchen+ctphenology", "gmail.com"].join("@");
+  document.querySelectorAll("a.mail").forEach(function (el) {
+    el.href = "mailto:" + a;
+    if (el.dataset.show) el.textContent = a;
+  });
+</script>
+</body></html>
