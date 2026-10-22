@@ -13,7 +13,7 @@ a { color: var(--summer-dark); }
 header.site { background: var(--forest); color: #fff; }
 header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 header.site a { color: #fff; text-decoration: none; }
-.brand { display: flex; align-items: center; gap: 10px; font: 700 1.15rem Georgia, serif; }
+.brand { white-space: nowrap; display: flex; align-items: center; gap: 10px; font: 700 1.15rem Georgia, serif; }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
 nav a { margin-left: 20px; font-size: .95rem; opacity: .85; }
 nav a:hover { opacity: 1; }
@@ -64,4 +64,5 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: 
   .hero p { margin-left: auto; margin-right: auto; }
   .badges { justify-content: center; }
   nav a { margin-left: 12px; }
+  nav a:not(:last-child) { display: none; }
 }
